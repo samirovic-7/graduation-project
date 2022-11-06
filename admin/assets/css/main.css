@@ -1,0 +1,142 @@
+
+:root 
+{
+    --main-color:#0259e6;
+    --second-color:#4c5258;
+}
+*
+{
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+direction: rtl;
+}
+.content
+{
+    width: 100%;
+    height: auto;
+  
+    padding: 50px 0px;
+}
+
+.content .smaill-content 
+{
+    width: 75%;
+    margin: auto;
+    height: 580px;
+
+
+}
+.content .smaill-content .col-lg-6.img1
+{
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+.content .smaill-content .col-lg-6.form1
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.content .smaill-content .img 
+{
+    background-color: var(--main-color);
+    height: 580px;
+    position: relative;
+}
+.content .smaill-content .img img 
+{
+    width: 100%;
+    height: 383px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.content .smaill-content .form 
+{
+
+    height: 580px;
+    box-shadow: 0 2px 8px 0 rgb(163 159 159 / 20%), 0 6px 20px 0 rgb(183 181 181 / 19%);
+    padding: 45px;
+}
+
+.content .smaill-content .form .title 
+{
+    margin-bottom: 35px;
+}
+.content .smaill-content .form .title h5 
+{
+    color: var(--second-color);
+}
+.content .smaill-content .form .title p 
+{
+    color: var(--second-color);
+    font-size: 13px;
+}
+
+.content .smaill-content .form form 
+{
+
+}
+.content .smaill-content .form form  input
+{
+    border-radius: 20px;
+    padding-right: 20px;
+}
+.content .smaill-content .form form  input::placeholder
+{
+    color: #cacace;
+}
+
+.content .smaill-content .form form  .link
+{
+    text-align: right;
+    margin-bottom: 15px;
+}
+.content .smaill-content .form form  .link a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.content .smaill-content .form form button 
+{
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    margin-bottom: 15px;
+}
+.content .smaill-content .form form p 
+{
+    color: var(--second-color);
+    font-size: 14px;
+}
+.content .smaill-content .form form p  a
+{
+    text-decoration: none;
+}
+.content .smaill-content .form form  .pos
+{
+    position: relative;
+}
+.content .smaill-content .form form  .pos .icon
+{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+.content .smaill-content .form form  .pos .icon i 
+{
+    color: #696a6a;
+    font-size: 14px;
+}
+.content .smaill-content .form form label 
+{
+    font-size: 14px;
+    color: var(--second-color);
+}

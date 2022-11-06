@@ -1,0 +1,63 @@
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px #e1e5ee;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    
+  }
+  table thead {
+    box-shadow: 0 5px 10px #e1e5ee;
+  }
+  table th {
+    padding: 1rem 2rem;
+    letter-spacing: 0.10rem;
+    font-size: .86rem;
+    font-weight: 900;
+  }
+  table td {
+    padding: 1.3rem 3rem;
+    border-bottom: 1px dashed rgb(138, 135, 135);
+    font-size: 12px;
+  }
+  table a {
+    text-decoration: none;
+    color: #2962ff;
+  }
+  table .status {
+    border-radius: 0.2rem;
+    background-color: red;
+    /* padding: 0.2rem 1rem; */
+    text-align: center;
+    padding: 6px 0px;
+    width: 40px;
+    margin: auto;
+  }
+  table .status-pending {
+    background-color: #fff0c2;
+    color: #a68b00;
+  }
+  table .status-paid {
+    background-color: #c8e6c9;
+    color: #388e3c;
+  }
+  table .status-unpaid {
+    background-color: #e9bcc0;
+    color: #ae3030;
+  }
+  table .amount {
+    text-align: right;
+  }
+  table tr:nth-child(even) {
+    background-color: #f4f6fb;
+  }
+  td img
+  {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ced0d2;
+  }

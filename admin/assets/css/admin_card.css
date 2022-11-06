@@ -1,0 +1,52 @@
+.card
+{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+   /* background-color: var(--col-body-color);*/
+
+   background-image: url(../images/card8.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+.card .upper{
+    margin-bottom: 10px;
+
+}
+
+.card .upper p 
+{
+    font-size: 31px;
+    color: #919497;
+    font-weight: 500;
+    position: relative;
+    left: 177px;
+    /* right: 10px;*/
+}
+.card .card-content
+{
+
+}
+.card .card-content li
+{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: var(--col-main);
+}
+
+
+.card .card-content li span
+{
+    color: var(--bs-gray-dark);
+    margin-right: 6px;
+
+}  
+
+@media print 
+{
+    .side
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,336 @@
+
+
+/* 3.0 Header */
+
+
+/* Lg_Header Style */
+
+.lg_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+.lg_header .completeInfo{
+    color: #A6A6A6;
+    padding: 5px 0;
+    background-color: #00000085;
+    backdrop-filter: saturate(180%) blur(20px);
+    font-size: 15px;
+}
+.lg_header .completeInfo a{
+    color: #E2E2E2;
+    margin: 5px;
+}
+header .lg_header .lg_header_content{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    height: 70px;
+    z-index: 6;
+}
+header .lg_header  .overlay{
+    opacity: 1;
+    background-color: #b9b9b985;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+header .lg_header .lg_header_content .logo h1 {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: right;
+}
+header .lg_header .lg_header_content .logo{
+    grid-column: 1/2;
+}
+
+header .lg_header .lg_header_content nav{
+    grid-column: 2/7;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header .lg_header .lg_header_content nav > ul{
+    display: flex;
+}
+header .lg_header .lg_header_content nav > ul > li{
+    margin: 0 15px;
+    font-size: 16px;
+}
+header .lg_header .lg_header_content nav > ul  li.user_log a:first-of-type{
+    position: relative;
+    margin-left: 5px;
+}
+header .lg_header .lg_header_content nav > ul li.user_log a:first-of-type::after{
+    position: absolute;
+    content: '/';
+    color: #000;
+}
+
+
+/* ################################### user profile at header ###################################### */
+
+
+header .lg_header .lg_header_content nav ul li.user_options .nav_item,
+ .sideNav nav ul li.user_options .nav_item{
+    cursor: pointer;
+}
+header .lg_header .lg_header_content nav ul li.user_options .nav_item.username,
+ .sideNav nav ul li.user_options .nav_item.username{
+    max-width: 180px;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+header .lg_header .lg_header_content nav ul li.user_options,
+ .sideNav nav ul li.user_options{
+    position: relative;
+    user-select: none;
+}
+header .lg_header .lg_header_content nav ul li.user_options .menu,
+.sideNav nav ul li.user_options .menu,
+.lg_header_content nav .search_content .search_form{
+    display: none;
+    position: absolute;
+    left: 0;
+    min-height: 65px;
+    background-color: #fff;
+    border: 1px solid var(--col-border);
+    z-index: 15;
+    min-width: 200px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+header .lg_header .lg_header_content nav ul li.user_options .menu li, .sideNav nav ul li.user_options .menu li{
+    padding: 5px 0;
+    display: block;
+}
+header .lg_header .lg_header_content nav ul li.user_options .menu li a, .sideNav nav ul li.user_options .menu li a{
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+header .lg_header .lg_header_content nav ul li.user_options .menu li a:hover, .sideNav nav ul li.user_options .menu li a:hover{
+    background-color: var(--col-bg);
+    color: var(--col-main);
+}
+header .lg_header .lg_header_content nav ul li.user_options .menu li:not(:last-of-type),
+ .sideNav nav ul li.user_options .menu li:not(:last-of-type){
+    border-bottom: 1px solid var(--col-border);
+}
+header .lg_header .lg_header_content nav ul li.user_options .menu,
+.sideNav nav ul li.user_options .menu,
+.lg_header_content nav .search_content .search_form{
+    display: none;
+}
+header .lg_header .lg_header_content nav ul li.user_options.active .menu,
+.sideNav nav ul li.user_options.active .menu,
+.lg_header_content nav .search_content.active .search_form{
+    display: block;
+}
+.lg_header_content nav ul li a{
+    font-weight: 500;
+}
+.lg_header_content nav ul li a:hover, .lg_header_content nav ul li a.active
+, .sideNav nav ul li a.active
+, .sideNav nav ul li a:hover,
+.lg_header_content nav .search_content .search_icon:hover{
+    color: var(--col-main);
+}
+.lg_header_content nav .search_content{
+    position: relative;
+}
+.lg_header_content nav .search_content .search_icon{
+    font-size: 17px;
+    margin-right: 16px;
+}
+.lg_header_content nav .search_content .search_form{
+    padding: 20px 15px;
+    display: none;
+}
+.lg_header_content nav .search_content .search_form input,
+ .sideNav nav .search_content .search_form input{
+    font-size: 14px;
+    border: 1px solid var(--col-border);
+    padding: 5px 8px 5px 68px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    min-width: 240px;
+}
+.lg_header_content nav .search_content .search_form .closeIcon{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.lg_header_content nav .search_content .search_form button,
+.sideNav nav .search_content .search_form button{
+    font-size: 14px;
+    background-color: var(--col-main);
+    border: 1px solid var(--col-main);
+    padding: 5px 18px;
+    border-radius: 8px 0 0 8px;
+    -webkit-border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    -ms-border-radius: 8px 0 0 8px;
+    -o-border-radius: 8px 0 0 8px;
+    min-width: 60px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 20;
+    left: 16px;
+}
+.lg_header_content nav .search_content.active .search_form{
+    display: block;
+}
+.lg_header_content nav .search_content.active .search_icon{
+    color: var(--col-main);
+}
+
+
+
+
+.lg_header_content  .sm_nav_icon{
+    user-select: none;
+    display: none;
+    grid-column: 6/7;
+    text-align: left;
+    justify-self: end;
+    color: var(--col-main);
+    font-size: 22px;
+    cursor: pointer;
+    width: 22px;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/* ######################################################## */
+
+header .sideNav nav{
+    position: fixed;
+    max-width: 300px;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    background-color: #fff;
+    z-index: 11;
+    padding: 40px 20px;
+    transition: .3s ease-in-out left;
+    -webkit-transition: .3s ease-in-out left;
+    -moz-transition: .3s ease-in-out left;
+    -ms-transition: .3s ease-in-out left;
+    -o-transition: .3s ease-in-out left;
+}
+header .sideNav nav.active{
+    left: 0;
+}
+header .sideNav .overlay{
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 10;
+    position: fixed;
+    display: none;
+}
+
+header .sideNav nav > ul > li > a{
+    margin: 10px 0;
+    display: block;
+}
+
+
+
+ .sideNav nav .search_content .search_form input{
+
+    padding: 5px 8px 5px 17px;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.sideNav nav ul li.user_options{
+    margin-top: 15px;
+}
+.sideNav nav ul li.user_options .menu{
+    left: unset;
+    right: 0;
+}
+
+
+
+
+
+
+
+.logo img{
+    max-width: 70%;
+}
+
+
+
+
+@media (max-width:1260px) {
+    header .lg_header .lg_header_content nav > ul > li {
+        font-size: 15px;
+    }
+
+}
+@media (max-width:1200px) {
+    header .lg_header .lg_header_content{
+        height: 60px;
+    }
+    .lg_header_content nav{
+        display: none !important;
+    }
+    .lg_header_content  .sm_nav_icon{
+        display: block;
+    }
+
+}
+@media (max-width:992px) {
+    .logo img{
+        max-width: 80%;
+    }
+
+}
+@media (max-width:768px) {
+    header .lg_header .lg_header_content{
+        height: 50px;
+    }
+    .lg_header .completeInfo{
+        font-size: 14px;
+    }
+    header .lg_header .lg_header_content .logo h1{
+        font-size: 40px;
+    }
+    .lg_header_content nav{
+        display: none !important;
+    }
+    .lg_header_content  .sm_nav_icon{
+        display: block;
+    }
+    .logo img{
+        max-width: 100%;
+    }
+}
+@media (max-width:567px) {
+    .logo img{
+        max-width: 140%;
+    }
+    .lg_header .completeInfo{
+        font-size: 13px;
+    }
+}

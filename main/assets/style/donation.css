@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.top {
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6% auto 2%;
+    height: 400px;
+}
+
+.card_donate {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    color: #E6E7E8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.card_donate img {
+    position: relative;
+    width: 250px;
+    right: 43%;
+    top: 1%
+}
+
+.card_donate .card-data {
+    position: relative;
+}
+
+.card_donate .card-description {
+    font-size: 134%;
+    color: black;
+}
+
+.card_donate .card-button {
+    /* padding: 10px 20px; */
+    color: #0755a2;
+    margin-top: 5px;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #eaeaea;
+    font-weight: 1000;
+    opacity: 0;
+}
+
+.card_donate:hover img {
+    transition: 0.5s linear;
+}
+
+card {
+    position: relative;
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 55px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    background-color: #1665C0;
+    color: rgb(224, 219, 219);
+}
+
+card a {
+    color: white;
+    text-decoration: none;
+}
+
+card:hover a {
+    color: white;
+}
+
+card:hover::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.6;
+    width: 100%;
+    height: 300%;
+    left: 0;
+    top: 0;
+    background: radial-gradient(circle at 5% 35%, transparent 0, transparent 3px, rgb(214, 195, 195) 4px, rgb(204, 195, 195) 6px, transparent 6px), radial-gradient(circle at 75% 44%, transparent 0, transparent 7px, rgb(214, 195, 195) 8px, rgb(204, 195, 195) 10px, transparent 10px), radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, rgb(214, 195, 195) 5px, rgb(204, 195, 195) 7px, transparent 7px), radial-gradient(circle at 30% 40%, transparent 0, transparent 8px, rgb(214, 195, 195) 9px, rgb(204, 195, 195) 11px, transparent 11px);
+    animation: bubble 5s infinite;
+}
+
+@keyframes bubble {
+    from {
+        transform: translate(20%, -15%);
+        -webkit-transform: translate(20%, -15%);
+        -moz-transform: translate(20%, -15%);
+        -ms-transform: translate(20%, -15%);
+        -o-transform: translate(20%, -15%);
+    }
+    to {
+        transform: translate(0, -40%);
+        -webkit-transform: translate(0, -40%);
+        -moz-transform: translate(0, -40%);
+        -ms-transform: translate(0, -40%);
+        -o-transform: translate(0, -40%);
+    }
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    height: 300px;
+}
+
+.donation_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.donation_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.wow {
+    width: 45%;
+    height: 60%;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: -9%;
+    box-shadow: -6px -3px 12px 2px rgb(81, 78, 78);
+}

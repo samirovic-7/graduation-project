@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --col-main :#1665C0;
+    --col-main-dark :#43a5f5;
+    --col-black : #222;
+    --col-black-l : #666;
+    --col-border: #E5E5E5;
+    --col-gray-d : #9E9E9E;
+    --col-border-d: #707070;
+    --col-bg : #F7F7FA;
+}
+
+.user_date
+{
+    padding: 35px 0px;
+}
+.user_date label
+{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--bs-secondary);
+}
+.user_date input
+{
+    font-size: 14px;
+    border: 1px solid var(--col-border);
+    padding: 14px 15px;
+    /* padding: 3px 8px 5px 68px; */
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,37 @@
+::-webkit-scrollbar{
+    width:7px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(0, 0, 0);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent , rgb(42, 38, 38));
+}
+
+
+.content
+{
+    padding: 50px 0px;
+}
+.content .smaill-content .form
+{
+    padding: 25px 40px;
+}
+.content .smaill-content .form .title 
+{
+    margin-bottom: 15px;
+}
+
+.content .smaill-content .form
+{
+    padding: 25px 40px;
+    height: 650px;
+    overflow: auto;
+}
+.content .smaill-content .img 
+{
+    background-color: var(--main-color);
+    height: 650px;
+    position: relative;
+}

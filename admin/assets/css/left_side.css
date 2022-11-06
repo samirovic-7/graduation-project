@@ -1,0 +1,73 @@
+.side-left
+{
+    background: white;
+    position: fixed;
+    width: 17%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    padding: 30px 10px;
+}
+.side-left .side-left-content
+{
+    
+}
+.parent
+{
+    display: none;
+}
+.side-left .side-left-content .item
+{
+    width: 100%;
+    background-color: var(--col-body-color);
+    padding: 10px;
+    position: relative;  
+    margin-bottom: 10px;
+}
+.side-left .side-left-content .item .slide-down
+{
+    font-size: 16px;
+    text-decoration: none;
+}
+.side-left .side-left-content .item .plus-icon
+{
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    font-size: 12px;
+}
+
+
+
+
+.side-left .item .slide-down
+{
+    margin-bottom: 10px;
+    
+}
+
+.side-left .item .sub-item
+{
+    margin-top: 10px;
+    padding-right: 4px;
+
+}
+.side-left .item .sub-item i.left
+{
+    margin-left: 5px;
+    color: var(--col-main);
+}
+
+.side-left .item .sub-item .sub-item-city
+{
+    margin-top: 7px;
+    display: none
+}
+
+.side-left .item .sub-item .sub-item-city .sub-item-cities
+{
+    display: block;
+    margin-right: 13px;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
